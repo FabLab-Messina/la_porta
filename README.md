@@ -1,5 +1,5 @@
 # La porta
 
-Il progetto consiste in due parti:
-  - software (codice python su arduino yun)
-  - hardware (codice per arduino leonardo)
+Il progetto consiste di due parti:
+  - software (codice python sotto /app)
+  - firmware (codice per arduino leonardo sotto /Porta_32U4)
