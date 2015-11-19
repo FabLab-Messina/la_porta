@@ -12,3 +12,15 @@ Si raccomanda di attenersi a queste poche e semplici regole di scrittura del cod
 * Nomi di variabili private: _nome_di_variabile_privata
 * Nomi di metodi di classe: nome_di_metodo_di_classe
 
+
+Unit testing
+-
+
+Unittest è un modulo python per eseguire un insieme di regole che vanno a verificare in modo totalmente automatizzato il corretto funzionamento del codice che sviluppato.
+
+Tutti i file denominati come **test_*nome_modulo*** non sono altro che una raccolta di *testcase* per validare il codice del rispettivo modulo.
+
+Per eseguire i test basta spostarsi nella cartella che li contiene e lanciare il comando seguente
+```
+python3 -m unittest
+```
