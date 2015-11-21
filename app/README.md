@@ -1,3 +1,15 @@
+Dipendenze
+-
+
+Il progetto necessita soltanto di due dipendenze:
+* bottle - libreria per creare il webservice
+* pyserial - libreria per sfruttare la comunicazione seriale
+
+Per installare le dipendenze necessarie al progetto con il packet manager **APT** basta digitare
+```
+sudo apt-get install python3 python3-bottle python3-serial
+```
+
 Coding Style
 -
 
