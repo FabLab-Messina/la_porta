@@ -2,4 +2,14 @@ from evtmgr import EventManager
 
 from webservice import WebService
 
-# istazio i vari attori e metto in piedi l'infrastruttura
+
+def open_porta( who ):
+    print('porta aperta!')
+
+
+event_manager = EventManager()
+mod_webserver = WebService( event_manager )
+
+event_manager.listen_event('on_porta_open_request', open_porta)
+
+mod_webserver.start()
