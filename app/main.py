@@ -10,6 +10,6 @@ def open_porta( who ):
 event_manager = EventManager()
 mod_webserver = WebService( event_manager )
 
-event_manager.listen_event('on_porta_open_request', open_porta)
+event_manager.listen_event('on_porta_unlock_request', open_porta)
 
 mod_webserver.start()

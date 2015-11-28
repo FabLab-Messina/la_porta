@@ -6,7 +6,7 @@ class WebService:
     def __init__(self, event_manager):
 
         self._event_manager = event_manager
-        self._event_manager.register_event('on_porta_open_request')
+        self._event_manager.register_event('on_porta_unlock_request')
 
         self._webservice = Bottle()
         self._setup_routing()
@@ -31,6 +31,6 @@ class WebService:
 
 
     def _manage_porta(self, action):
-        if action == 'open':
-            self._event_manager.trigger_event('on_porta_open_request', self)
+        if action == 'unlock':
+            self._event_manager.trigger_event('on_porta_unlock_request', self)
 
