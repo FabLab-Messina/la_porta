@@ -27,7 +27,7 @@ class SerialCom:
         pass
 
 
-    def send_packet(self, target, *, action=None, payload=None):
+    def send_packet(self, target, action=None, payload=None):
         if action == None and payload == None:
             raise Exception('Need to specify an action or a payload for the given target.')
         # if an action is specified will override the payload usage
