@@ -36,10 +36,10 @@ class SerialCom:
             if action != None and action in targets[target]['actions']:
                 if not self._busy: self._busy = True # quick and dirty
 
-                packet = b'\xAA'
-                packet += bytes( [ targets[target]['id'] ] )
-                packet += bytes( [ 1, targets[target]['actions'][action] ] )
-                packet += b'\xBB\xCC\xDD'
+                packet = bytearray( '\xAA' )
+                packet += bytearray( [ targets[target]['id'] ] )
+                packet += bytearray( [ 1, targets[target]['actions'][action] ] )
+                packet += bytearray( '\xBB\xCC\xDD' )
 
                 self._serial.write(packet)
 
