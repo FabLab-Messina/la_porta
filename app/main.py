@@ -13,7 +13,7 @@ def open_porta( who ):
 
 event_manager = EventManager()
 mod_webserver = WebService( event_manager )
-mod_arduino = SerialCom( event_manager, '/dev/pts/13' )
+mod_arduino = SerialCom( event_manager, '/dev/ttyATH0', 115200 )
 
 event_manager.listen_event('on_porta_unlock_request', open_porta)
 
