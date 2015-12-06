@@ -24,7 +24,7 @@ class WebService:
         pass
 
 
-    def start(self, host='localhost', port=8080):
+    def start(self, host='0.0.0.0', port=8080):
         self._host = host
         self._port = port
         self._webservice.run( host=self._host, port=self._port )
