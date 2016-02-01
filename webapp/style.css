@@ -11,20 +11,22 @@ p {
     font-family: "Times New Roman";
     font-size: 20px;
 }
-.stream{
-background-color:#6E6E6E;
-}
-.stream img { 
-       margin:0px auto;
-       display:block;
-        
 
+.stream{
+    background-color: #6E6E6E;
 }
+
+.stream img { 
+    margin: 0px auto;
+    display: block;
+    transform: rotate(180deg);
+}
+
 .button button{
-margin:0px auto;
-display:block;
-height:50px;
-width:200px;	
+    margin: 0px auto;
+    display: block;
+    height: 50px;
+    width: 200px;	
 }
 
 
