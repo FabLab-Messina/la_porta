@@ -19,7 +19,6 @@ p {
 .stream img { 
     margin: 0px auto;
     display: block;
-    transform: rotate(180deg);
 }
 
 .button button{
