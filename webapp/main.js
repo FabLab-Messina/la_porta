@@ -1,4 +1,3 @@
-var ip_arduino = '192.168.1.3';
 var ip_camera = '192.168.1.200';
 
 
@@ -12,7 +11,7 @@ function aggiorna_img() {
 
 function apri_porta() {
     var request = new XMLHttpRequest();
-    request.open('GET', "http://" + ip_arduino + ":8080/fablab/porta/unlock", true);    
+    request.open('GET', "http://porta.fablabmessina.it:8080/fablab/porta/unlock", true);    
     request.send();
 }
 
